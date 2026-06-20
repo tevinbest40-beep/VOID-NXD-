@@ -1,56 +1,90 @@
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#111;
-color:white;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#111;
+    color:white;
+    font-size:18px;
 }
 
 header{
-text-align:center;
-padding:30px;
-background:#0a84ff;
+    text-align:center;
+    padding:35px;
+    background:#0a84ff;
+    box-shadow:0 0 20px #0a84ff;
 }
 
 nav{
-text-align:center;
-padding:15px;
-background:#222;
+    text-align:center;
+    padding:15px;
+    background:#222;
 }
 
 nav a{
-color:white;
-text-decoration:none;
-margin:10px;
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-size:20px;
+    font-weight:bold;
 }
 
 .hero{
-text-align:center;
-padding:50px 20px;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h2{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:20px;
 }
 
 .articles{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:20px;
-padding:20px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding:25px;
 }
 
 .card{
-background:#222;
-width:300px;
-padding:20px;
-border-radius:10px;
+    background:#222;
+    width:320px;
+    padding:25px;
+    border-radius:15px;
+
+    /* Glowing Border */
+    border:2px solid #0a84ff;
+    box-shadow:
+        0 0 10px #0a84ff,
+        0 0 20px #0a84ff,
+        0 0 40px #0a84ff;
+}
+
+.card:hover{
+    transform:scale(1.05);
+    transition:0.3s;
+}
+
+.card h3{
+    font-size:26px;
+}
+
+.card p{
+    font-size:18px;
 }
 
 .card a{
-color:#0a84ff;
-text-decoration:none;
+    color:#4db8ff;
+    text-decoration:none;
+    font-weight:bold;
 }
 
 footer{
-text-align:center;
-padding:20px;
-background:#222;
-margin-top:30px;
+    text-align:center;
+    padding:25px;
+    background:#222;
+    margin-top:30px;
+    box-shadow:0 0 15px #0a84ff;
 }
